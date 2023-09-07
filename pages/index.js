@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import copy from "copy-to-clipboard";
 
 const Index = () => {
@@ -33,40 +33,15 @@ const Index = () => {
     }
   };
 
-  // The provided HTML code as a string
-  const additionalHTML = `
-    <html lang="en">
-    <head>
-      <title>Bootstrap Example</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
-    <body>
-    
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="" alt=" " style="width: 40px;" class="rounded-pill">
-        </a>
-      </div>
-    </nav>
-    
-    <div class="container-fluid mt-3">
-      <h3></h3>
-      <p></p>
-    </div>
-    
-    </body>
-    </html>
-  `;
-
   return (
     <div>
-      {/* Insert the provided HTML using dangerouslySetInnerHTML */}
-      <div dangerouslySetInnerHTML={{ __html: additionalHTML }} />
-      
+      {/* Larger white text */}
+      <div className="text-center">
+        <p className="text-3xl font-bold text-white py-6" style={{marginTop:"70px", fontSize:"35px"}}>
+          Effortlessly obtain premium video thumbnails from YouTube using our intuitive tool 😉
+        </p>
+      </div>
+      {/* Main container */}
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-8">
           <h1 className="text-3xl font-bold mb-2" style={{ color: "white" }}>
@@ -115,6 +90,5 @@ const Index = () => {
 };
 
 export default Index;
-
 
 
