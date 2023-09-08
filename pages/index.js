@@ -35,18 +35,15 @@ const Index = () => {
 
   return (
     <div>
-      {/* Larger white text */}
-      <div className="text-center">
-        <p className="text-3xl font-bold text-white py-6" style={{marginTop:"70px", fontSize:"35px"}}>
-          Effortlessly obtain premium video thumbnails from YouTube using our intuitive tool 😉
-        </p>
-      </div>
-      {/* Main container */}
+      
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-2" style={{ color: "white" }}>
-            Youtube Thumbnail Downloader
+        <h1 className="text-3xl font-bold mb-2" style={{ color: "white", fontSize:"30px"}}>
+        Effortlessly obtain premium video thumbnails from YouTube using our intuitive tool 😉
           </h1>
+          <h2 className="text-3xl font-bold mb-2" style={{ color: "white" }}>
+            Youtube Thumbnail Downloader
+          </h2>
           <p className="text-gray-600" style={{ color: "white" }}>
             Download high-quality thumbnails from YouTube videos.
           </p>
@@ -68,7 +65,7 @@ const Index = () => {
         </div>
         {thumbnailOptions.length > 0 && (
           <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4">Thumbnail Options</h2>
+            <h2 className="text-xl font-semibold mb-4" style={{color:"white", fontSize:"20px"}}>Thumbnail Options:</h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {thumbnailOptions.map((option, index) => (
                 <div key={index} className="thumbnail-option">
