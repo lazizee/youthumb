@@ -1,7 +1,8 @@
 import { useState } from "react";
 import copy from "copy-to-clipboard";
+import Head from "next/head"; // Import the Head component
 
-const Index = () => {
+function Index() {
   const [videoURL, setVideoURL] = useState("");
   const [thumbnailOptions, setThumbnailOptions] = useState([]);
 
@@ -35,11 +36,20 @@ const Index = () => {
 
   return (
     <div>
-      
+      <Head>
+        {/* Include the Google AdSense script in the head section */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4644191924023931"
+          crossOrigin="anonymous"
+        ></script>
+      </Head>
+
+      {/* Content of your component */}
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-2" style={{ color: "white", fontSize:"30px"}}>
-        Effortlessly obtain premium video thumbnails from YouTube using our intuitive tool 😉
+          <h1 className="text-3xl font-bold mb-2" style={{ color: "white", fontSize: "30px" }}>
+            Effortlessly obtain premium video thumbnails from YouTube using our intuitive tool 😉
           </h1>
           <h2 className="text-3xl font-bold mb-2" style={{ color: "white" }}>
             Youtube Thumbnail Downloader
@@ -65,7 +75,7 @@ const Index = () => {
         </div>
         {thumbnailOptions.length > 0 && (
           <div className="mt-8">
-            <h2 className="text-xl font-semibold mb-4" style={{color:"white", fontSize:"20px"}}>Thumbnail Options:</h2>
+            <h2 className="text-xl font-semibold mb-4" style={{ color: "white", fontSize: "20px" }}>Thumbnail Options:</h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {thumbnailOptions.map((option, index) => (
                 <div key={index} className="thumbnail-option">
@@ -84,8 +94,11 @@ const Index = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Index;
+
+
+
 
 
