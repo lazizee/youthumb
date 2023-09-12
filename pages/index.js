@@ -45,16 +45,17 @@ function Index() {
         ></script>
       </Head>
 
+
       {/* Content of your component */}
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-2" style={{ color: "white", fontSize: "30px" }}>
+          <h1 className="text-3xl font-bold mb-2" style={{ color: "black", fontSize: "30px" }}>
             Effortlessly obtain premium video thumbnails from YouTube using our intuitive tool 😉
           </h1>
-          <h2 className="text-3xl font-bold mb-2" style={{ color: "white" }}>
+          <h2 className="text-3xl font-bold mb-2" style={{ color: "black" }}>
             Youtube Thumbnail Downloader
           </h2>
-          <p className="text-gray-600" style={{ color: "white" }}>
+          <p className="text-gray-600" style={{ color: "black" }}>
             Download high-quality thumbnails from YouTube videos.
           </p>
         </header>
